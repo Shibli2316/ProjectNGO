@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="header2.css">
+</head>
+
+<body>
+    <div class="body">
+        <header>
+            <img src="img1.jpg" alt="" class="banner">
+            <a href="#" class="logo">VAPFPR</a>
+            <div class="toggle"></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Register</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h2>Home page begins here</h2>
+            <p> ipsum dolor sit amet consectetur adipisicing elit. Nulla quas rerum officiis tenetur expedita odit
+                molestias quod temporibus eius? Ex unde itaque maiores eaque sit ab accusantium ratione consectetur fuga
+                culpa? Illum unde consectetur impedit incidunt. Quisquam voluptas ullam nobis. Reprehenderit eum tenetur
+                deserunt tempora adipisci, culpa ullam ipsum nostrum pariatur molestias, possimus ipsam blanditiis, a
+                obcaecati autem! Nulla id hic facilis officiis perspiciatis blanditiis accusantium quod sequi optio sunt
+                omnis eius, minima fuga officia eaque ipsum, quam soluta illo porro quae aperiam aut rem. Dolorem
+                commodi explicabo velit nostrum quod, illum corporis pariatur fuga architecto, totam sint eligendi quos?
+            </p>
+        </section>
+        <script>
+            window.addEventListener("scroll", function () {
+                const header = document.querySelector('header');
+                header.classList.toggle('sticky', window.scrollY > 0);
+            });
+            const navigation = document.querySelector('nav');
+            document.querySelector('.toggle').onclick = function () {
+                this.classList.toggle('active');
+                navigation.classList.toggle('active');
+            }
+        </script>
+    </div>
+</body>
+
+</html>
